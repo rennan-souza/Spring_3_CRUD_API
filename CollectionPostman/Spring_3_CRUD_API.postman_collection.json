@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "9004d485-e508-401c-aeb3-d2488ab3f712",
+		"name": "Spring_3_CRUD_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15675334"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/categorias"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/categorias/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delte",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/categorias/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Gerais\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/categorias"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Gerais\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/categorias"
+			},
+			"response": []
+		}
+	]
+}
